@@ -1,0 +1,62 @@
+/* This CSS document is to be used on all aux pages of the wedding website. */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Patrick+Hand&family=Roboto:wght@300;400&display=swap');
+
+/*
+font-family: 'Caveat', cursive;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Patrick Hand', cursive;
+*/
+
+.material-symbols-outlined {
+ display: block;
+ margin: auto;
+}
+
+:root {
+    --liback: #89CFF0;
+    --hovernav: #FDFD96;
+    --navfont: 'Roboto', sans-serif; 
+    --titlefont: 'Caveat', cursive;
+    --bodytext: 'Patrick Hand', cursive;
+}
+
+.page-title {
+    font-family: var(--titlefont);
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+}
+
+p {
+    font-family: var(--bodytext);
+    word-spacing: 1px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #89CFF0;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#iframe-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Google form mobile */
+@media screen and (max-width:767px) {
+    iframe[src*="google.com/forms"] {
+        width: 100% !important;
+        height: 800px;
+    }
+}
