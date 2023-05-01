@@ -1,0 +1,148 @@
+/* This CSS document is to be used on all aux pages of the wedding website. */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Patrick+Hand&family=Roboto:wght@300;400&display=swap');
+
+/*
+font-family: 'Caveat', cursive;
+font-family: 'Roboto', sans-serif; 
+font-family: 'Patrick Hand', cursive;
+*/
+
+.material-symbols-outlined {
+    align-self: center;
+    margin-top: 50px;
+}
+
+:root {
+    --liback: #89CFF0;
+    --hovernav: #FDFD96;
+    --navfont: 'Roboto', sans-serif; 
+    --titlefont: 'Caveat', cursive;
+    --bodytext: 'Patrick Hand', cursive;
+}
+
+.page-title {
+    font-family: var(--titlefont);
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+}
+
+p {
+    font-family: var(--bodytext);
+    word-spacing: 1px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #89CFF0;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 55px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+#iframe-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Google form mobile */
+@media screen and (max-width:767px) {
+    iframe[src*="google.com/forms"] {
+        width: 100% !important;
+        height: 800px;
+    }
+}
+
+.link {
+    height: auto;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    list-style: none;
+    text-align: center;
+    font-family: var(--navfont);
+    border-radius: 12px;
+    font-weight: 300;
+    font-size: 17px;
+    box-shadow: 6px 7px 15px black;
+    background-color: var(--hovernav);
+    border: transparent solid 3px;
+    transition: border 0.4s ease-out;
+}
+
+a {
+    align-self: center;
+}
+/* Hover Animaiton and Current */
+.link:hover:not(#current) {
+    border-color: var(--liback);
+}
+
+
+.direction-container{
+   display: grid; 
+
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   justify-items: center;
+   grid-template-areas: 
+	'dt dt'
+	'ml1 ml2'
+	'ml1 ml2';
+   
+   gap: 10px;
+   width: fit-content;
+   margin: 0 auto;
+   
+}
+  
+.dt {
+
+   background-color: var(--hovernav); 
+   grid-area: dt;
+   width: 100%;
+   text-align: center;
+   padding: 10px;
+   color: black;
+   font-family: var(--navfont);
+   box-shadow: 0px 5px 10px black;
+   border-radius: 5px;
+   
+}
+.ml1 {
+
+   background-color: #87f77b; 
+   grid-area: ml1;
+   padding: 30px;
+
+   
+}
+.ml2 {
+
+   background-color: #c6dedb; 
+   grid-area: ml2;
+   padding: 30px;
+   
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+#registry {
+    margin-top: 10px;
+}

@@ -1,0 +1,76 @@
+.card {
+    width: 300px;
+    height: auto;
+    position: relative;
+    background-color: var(--bgbox);
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    align-self: stretch;
+    box-shadow: 4px 4px 10px black;
+}
+
+.section {
+    text-align: center;
+    color: var(--headingcolor);
+    font-family: var(--bodytext);
+    font-weight: 700;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.415);
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    min-width: 80%;
+    color: white;
+    
+}
+
+.card-container {
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: bl;
+}
+
+.content-container {
+    display: flex;
+    background-color: rgba(35, 35, 35, 0.6);
+    border-radius: 10px;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+
+.rsvp-hl {
+    background-color: rgba(62, 102, 235, 0.623);
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.content-bottom {
+    padding-bottom: 10px;
+}
+
+.content-heading {
+    padding-top: 10px;
+}
+
+.bg-tl {
+    background-color: #FDFD96;
+    color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 5px;
+}
